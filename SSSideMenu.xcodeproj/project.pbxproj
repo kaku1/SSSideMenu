@@ -10,6 +10,8 @@
 		A9D2340F206AC93200472B0F /* SSSideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D23405206AC93100472B0F /* SSSideMenu.framework */; };
 		A9D23414206AC93200472B0F /* SSSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23413206AC93200472B0F /* SSSideMenuTests.swift */; };
 		A9D23416206AC93200472B0F /* SSSideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D23408206AC93100472B0F /* SSSideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D23420206AC96A00472B0F /* SSSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2341F206AC96A00472B0F /* SSSideMenu.swift */; };
+		A9D23422206AC9AF00472B0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D23421206AC9AF00472B0F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A9D2340E206AC93200472B0F /* SSSideMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSSideMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D23413206AC93200472B0F /* SSSideMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSideMenuTests.swift; sourceTree = "<group>"; };
 		A9D23415206AC93200472B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D2341F206AC96A00472B0F /* SSSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSSideMenu.swift; sourceTree = "<group>"; };
+		A9D23421206AC9AF00472B0F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		A9D23407206AC93100472B0F /* SSSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				A9D2341F206AC96A00472B0F /* SSSideMenu.swift */,
+				A9D23421206AC9AF00472B0F /* Extensions.swift */,
 				A9D23408206AC93100472B0F /* SSSideMenu.h */,
 				A9D23409206AC93200472B0F /* Info.plist */,
 			);
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					A9D23404206AC93100472B0F = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					A9D2340D206AC93200472B0F = {
@@ -196,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D23420206AC96A00472B0F /* SSSideMenu.swift in Sources */,
+				A9D23422206AC9AF00472B0F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 		A9D2341A206AC93200472B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Animate.SSSideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +366,7 @@
 		A9D2341B206AC93200472B0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +388,7 @@
 		A9D2341D206AC93200472B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAKHZH8UZC;
 				INFOPLIST_FILE = SSSideMenuTests/Info.plist;
@@ -390,6 +403,7 @@
 		A9D2341E206AC93200472B0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KAKHZH8UZC;
 				INFOPLIST_FILE = SSSideMenuTests/Info.plist;
